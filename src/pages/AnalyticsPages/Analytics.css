@@ -1,0 +1,10 @@
+.flexbar{
+    flex-direction: column;
+}
+.char-container{
+    margin: 10px auto 10px auto;
+    width: 90%;
+    border-radius: 10px;
+    background: var( --bg-secondary);
+    padding: 10px;
+}

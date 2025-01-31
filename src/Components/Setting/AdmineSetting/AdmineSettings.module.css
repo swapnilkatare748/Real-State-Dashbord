@@ -1,0 +1,43 @@
+.adminSettings {
+    padding: 20px;
+    border-radius: 10px;
+    background: var( --bg-secondary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    height: 400px;
+    margin: auto; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .adminSettings h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .settingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .settingItem label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .settingItem button,
+  .settingItem select {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .settingItem button:hover,
+  .settingItem select:hover {
+    background-color: #f0f0f0;
+  }
+  

@@ -1,0 +1,6 @@
+
+.RevenuBar{
+    background: var(--bg-secondary);
+    padding: 20px;
+    width: 100%; 
+}

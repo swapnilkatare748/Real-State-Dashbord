@@ -1,0 +1,59 @@
+.SeeProperty{
+    width: 100%;
+    padding-top: 10px;
+    margin: auto;
+}
+.last > h3{
+    font-size: 1.3rem;
+}
+.inputSerch{
+    width: 70%;
+    background-color: var(--bg-secondary);
+    display: flex;
+    padding: 5px;
+}
+.inputSerch>select{
+    width: 13%;
+    background-color: var(--bg-secondary);
+    font-size: large;
+    color: var(--color-muted);
+}
+.inputSerch>input{
+    flex: 1;
+}
+.inputSerch>select>option{
+    background: var(--gradient-1);
+}
+.inputSerch > button{
+    padding: 10px;
+   background: transparent;
+}
+
+/* pagination css  */
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background : var(--gradient-1);
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination .activeButton {
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+  }
+  

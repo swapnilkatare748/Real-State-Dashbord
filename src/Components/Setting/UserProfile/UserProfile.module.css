@@ -1,0 +1,90 @@
+.UserProfile{
+    /* width: 30%; */
+    height: auto;
+    min-height: 400px;
+    min-width: 300px;
+    max-height: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px var(--bg-secondary);
+    background: var(--bg-secondary);
+    align-items: space-between;
+    justify-content: center;
+}
+
+.profilePhoto{
+   width: 5rem;
+   position: relative;
+   bottom: -40px;
+   left: 10px;
+   height: 5rem;
+   min-width: 6rem;
+   min-height: 6rem;
+   max-width: 7rem;
+   max-height: 7rem;
+   overflow: hidden;
+   border-radius: 100%;
+   cursor: pointer;
+   transition: var(--transition);
+}
+
+.profilePhotodiv{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0px 0px ;
+    background : var(--gradient-1);
+}
+.section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.section>p{
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+.section>h4{
+ font-size: large;
+ margin-top: 40px;
+ text-align: center;
+}
+.section2>p{
+    padding: 10px;
+    font-size: 10px;
+}
+.buttons{
+    height: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.buttons2{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_cp{
+    background: none;
+    margin-right: 10px;
+    font-size: 10px;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.btn_Edit{
+    background: var(--gradient-1);
+    padding: 10px 20px;
+    display: flex;
+    color: var(--color-white);
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.btn_Edit > span{
+    margin-right: 10px;
+}
+
+.logout{
+    background: var(--color-danger);
+}

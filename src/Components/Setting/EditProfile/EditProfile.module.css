@@ -1,0 +1,47 @@
+.editProfile{
+    height: 400px;
+    min-height: 400px;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px var(--bg-secondary);
+    background: var(--bg-secondary);
+     display: flex;
+     flex-direction: column;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+.savebtn{
+    background: var(--gradient-1);
+    padding: 10px 20px;
+    width: 40%;
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cancleButton{
+    background: var(--color-danger);
+    padding: 10px 20px;
+    width: 40%;
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.field>input{
+     border: 1px solid ;
+     border-radius: 10px;
+}

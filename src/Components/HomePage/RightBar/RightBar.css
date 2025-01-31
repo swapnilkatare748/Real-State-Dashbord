@@ -1,0 +1,37 @@
+.right-bar-container{
+    padding: 20px;
+    overflow: hidden;
+
+}
+.right-bar-container .agent-card{
+    gap: 10px;
+    margin: 10px 0;
+}
+.right-bar-container .agent-card .name{
+    font-size: 14px;
+}
+.right-bar-container .agent-card .muted{
+    font-size: 12px;
+}
+.right-bar-container .property-card{
+    margin: 10px 0;
+}
+.right-bar-container .property-card .picture{
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    overflow: hidden;
+}
+.right-bar-container .property-card .title,
+.right-bar-container .property-card .muted{
+    font-size: 12px;
+}
+
+.right-bar-container .property-card .price{
+    margin-left: auto;
+    font-size: 14px;
+    color: var(--color-success);
+}

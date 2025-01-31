@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
+:root{
+  --color-primary: #1126ef;
+  --color-primary-accent:blueviolet;
+  --color-white:#ffffff; 
+  --color-text:#111111;
+  --color-text-accent:#2b2a2a;
+  --color-muted: #808080;
+  --color-success:#33c648;
+  --color-danger:#fc605b;
+  --color-warning:#ffbb55;
+  --transition:all 400ms ease;
+  --gray-border:1px solid rgba(125, 125, 130, 0.493);
+  --bg-primary: #f1f1f1;
+  --bg-secondary: #FFFFFF;
+  --bg-variant: #e9e6e6;
+  --gradient-1:linear-gradient(to right, var(--color-primary) 0%, var(--color-primary-accent) 100%);
+  --shadow-1: inset 0 0 0.5px 1px hsla(0, 0%,  
+              100%, 0.075),
+              /* shadow ring 👇 */
+              0 0 0 1px hsla(0, 0%, 0%, 0.05),
+              /* multiple soft shadows 👇 */
+              0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+              0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+              0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+
+[data-theme="dark"] {
+    --color-text:#FFFFFF;
+    --color-text-accent:#b8b6b6;
+    --gray-border:1px solid rgba(89, 88, 88, 0.633);
+    --bg-primary: #0A0A0C;
+    --bg-secondary: #171719;
+    --bg-variant: #1b1b1e;
+} 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0 ;
+  outline: 0;
+}
+
+html,body{
+  color: var(--color-text);
+  min-height: 100vh;
+  background: var(--bg-primary);
+  font-family: "poppins",sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color:var(--color-primary) transparent ;
+  
+}
+body{
+  max-width: 1800px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+p{
+  font-size: 15px;
+}
+ a{
+  color: var(--color-text);
+  text-decoration: none;
+
+ }
+ h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+ }
+
+ img{
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+ }
+ input{
+  height: 40px;
+  overflow: hidden;
+  background: transparent;
+  padding: 0 10px;
+  color: var(--color-text);
+ }
+ .muted{
+  color: var(--color-muted);
+ }
+ .primary{
+  color: var(--color-primary);
+ }
+ .gridient-text{
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ .divider{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  border-bottom: var(--gray-border);
+
+ }
+ .flex{
+  display: flex;
+  gap: 20px;
+ }
+ .flex-center{
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+ }
+
+ .icon-wrapper{
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--color-text);
+  background: var(--bg-variant);
+ }
+
+ .icon-wrapper:hover{
+  transform: 2.8rem;
+  height: 2.8rem;
+  min-width: 2.8rem;
+  max-width: 2.8rem;
+  max-height: 2.5rem;
+  min-height: 2.5rem;
+  overflow: hidden;
+  border-radius:100% ;
+  cursor: pointer;
+  transition: var(--transition);
+
+ }
+
+
+
+ .profile{
+   width: 2.8rem;
+   height: 2.8rem;
+   min-width: 2.8rem;
+   min-height: 2.8rem;
+   max-width: 2.8rem;
+   max-height: 2.8rem;
+   overflow: hidden;
+   border-radius: 100%;
+   cursor: pointer;
+   transition: var(--transition);
+ }
+
+ .profile:hover{
+  opacity: 0.5;
+ }
+ .dot{
+  width: 0.5rem;
+   height: 0.5rem;
+   min-height:0.5rem ;
+   max-width: 0.5rem;
+   max-height: 0.5rem;
+   min-width: 0.5rem;
+   overflow: hidden;
+   border-radius: hidden;
+    background: var(--color-success);
+
+
+ }
+
+ .btn {
+  padding: 10px;
+  border: var(--gray-border);
+  color: var(--color-text);
+  border-radius: 1.2rem;
+  cursor: pointer;
+  background: var(--bg-variant);
+  transition: var(--transition);
+
+ }
+ .btn .primary{
+  background: var(--gradient-1);
+  color: var(--color-white);
+   border: none;
+   background-color: 200% auto;
+ }
+
+ .btn .primary:hover{
+  background-position: right center;
+ }
+ 
+ .no-scrollbar{
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+ }
+
+ .no-scrollbar::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+ }
+
+ .clamp-1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }

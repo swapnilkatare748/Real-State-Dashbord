@@ -1,0 +1,94 @@
+.properties-wrapper{
+    padding: 20px 30px;
+    border-radius: 10px;
+    background: var(--bg-secondary);
+}
+.properties-wrapper .top{
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.properties-wrapper .top .drop-container{
+    position: relative;
+    z-index: 3;
+}
+
+.properties-wrapper .top .drop-container .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-secondary);
+    z-index: 4;
+    list-style: none;
+    width: max-content;
+    border-radius: 10px;
+    box-shadow: var(--shadow-1);
+}
+
+.properties-wrapper.top.drop-container.dropdown .drop-item{
+    padding: 15px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.properties-wrapper.top.drop-container.dropdown .drop-item:hover{
+    color: var(--color-primary);
+
+}
+.properties-wrapper .properties-Container .property{
+    height: 170px;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.properties-wrapper .properties-Container .property .details-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to bottom,transparent,var(--color-primary));
+    padding: 10px 20px;
+    color: var(--color-primary);
+    padding: 10px 20px;
+    color:var(--color-white);
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.properties-wrapper .properties-Container .property .details-container .title{
+    font-size: 13px;
+}
+
+.properties-wrapper .properties-Container .property .details-containerr.price{
+    font-size: 14px;
+}
+.properties-wrapper .properties-Container .swiper-pagination-bullet{
+    background: var(--gradient-1)!important;
+    opacity: 1 !important;
+    width: 10px !important;
+    height: 10px !important;
+
+}
+
+.properties-wrapper .properties-Container .swiper-pagination-bullet-active{
+  background: var(--gradient-1)! important;
+}
+ 
+@media (max-width:900px){
+    .properties-wrapper{
+        border-radius: 0px;
+    }
+}
+
+@media (max-width:650px){
+    .properties-wrapper{
+        padding: 20px;
+    }
+    .properties-wrapper.properties-Container.property{
+        height: auto;
+    }
+}
+

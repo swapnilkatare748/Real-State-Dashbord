@@ -1,0 +1,21 @@
+.cluster-wrapper{
+               padding: 20px;
+               display: grid;
+               grid-template-columns: 38rem auto;
+               gap: 20px;
+               width: 100%;
+}
+
+.left-cluster{
+    width: 100%; 
+}
+.right-cluster{
+    position: sticky;
+    align-self: flex-start;
+    top: 130px;
+    background: var(--bg-secondary);
+    height: calc(100vh - 200px);
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 10px;
+}

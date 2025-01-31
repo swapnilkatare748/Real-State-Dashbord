@@ -1,0 +1,16 @@
+.settings{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: wheat; */
+}
+
+@media (max-width:900px){
+    .settings{
+        margin: auto;
+        align-items: center;
+        gap: 3rem;
+        flex-direction: column;
+    }
+}

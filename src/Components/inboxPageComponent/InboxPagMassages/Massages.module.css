@@ -1,0 +1,46 @@
+.Massages{
+    background: var(--bg-secondary);
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid;
+}
+
+.Massages>table{
+    width: 100%;
+}
+.viewbutton{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--gradient-1);
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+.deletebutton{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--color-danger);
+    border-radius: 10px;
+    color: var(--color-white);     
+}
+.messageDescription{
+    padding: 10px;
+    transition: 0.3s;
+    background-color: rgba(95, 158, 160, 0.236);
+}
+
+.descriptionRow{
+    max-height: 0;
+    overflow: hidden;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.descriptionRow .messageDescription{
+    max-height: 150px;
+}
+.descriptionContent{
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}

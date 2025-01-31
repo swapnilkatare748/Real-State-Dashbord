@@ -1,0 +1,13 @@
+.Reqest{
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid;
+    /* background: var( --bg-secondary); */
+
+}
+
+@media (max-width:1024px){
+    .Reqest{
+        height: 100%;
+    }
+}
